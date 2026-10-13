@@ -1,91 +1,96 @@
-# Free Tailwind landing page template
+# Trung Invest
 
-![Simple TailwindCSS template preview](https://github.com/cruip/tailwind-landing-page-template/assets/2683512/f9a98fab-a1bc-4fb5-8572-4de0b6bd932a)
+A Next.js landing page for Trung Invest, a Vietnam-focused market intelligence concept that combines explainable Wyckoff-style analysis with macroeconomic context. The project presents a product narrative for evidence-led investment research and a research workspace centered on transparent assumptions, data quality, and visible uncertainty.
 
-**Simple Light** is a free landing page template built on top of **TailwindCSS** and fully coded in **React** / **Next.js**. Simple light is designed to provide all the basic components a developer need to create a landing page for SaaS products, online services, and more.
+## Overview
 
-**UPDATE 2025-02-04** Added Tailwind v4 support!
+The app is a polished marketing site and concept preview for a research platform that helps users:
 
-Use it for whatever you want, and be sure to reach us out on X if you build anything cool/useful with it.
-Created and maintained with ❤️ by [Cruip.com](https://cruip.com/).
+- understand market structure using price-and-volume-based technical analysis
+- monitor macroeconomic indicators that shape Vietnam market conditions
+- reason through hypotheses with visible evidence and uncertainty
+- explore a modular, research-first workflow for investment decision support
 
-_Version 1.3.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/cruip/tailwind-landing-page-template/releases/tag/1.3.3)._
+The core landing page is implemented in `app/(default)/page.tsx` and styled through the custom CSS pipeline in `app/css`.
 
-## Live demo
+## Product positioning
 
-Check the live demo here 👉️ [https://simple.cruip.com/](https://simple.cruip.com/)
+The brand message in the source code emphasizes:
 
-## Simple Pro
+- Evidence over certainty
+- Explainable analysis
+- Vietnam macro context
+- Modular research capabilities
+- Clear and disciplined workflow
 
-[![Simple Pro](https://github.com/cruip/tailwind-landing-page-template/assets/2683512/992be2ba-3de7-4838-be41-12e85686c193)](https://cruip.com/)
+This is a concept-facing interface rather than a live trading or data platform. The UI includes illustrative metrics and structured product messaging, not real market data feeds.
 
-## Design files
+## Tech stack
 
-If you need the design files, you can download them from Figma's Community 👉 https://bit.ly/3HOZMpf
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- CSS modules and custom design styles
+- Headless UI
+- AOS animations
 
-## Usage
+## Project structure
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+```text
+.
+├── app/
+│   ├── (auth)/              # authentication pages
+│   ├── (default)/           # main marketing/landing experience
+│   ├── api/                 # route handlers
+│   ├── css/                 # global styles and theme assets
+│   ├── layout.tsx           # root layout and font setup
+│   └── page.tsx             # entry page (legacy default app export)
+├── components/              # reusable UI sections and blocks
+├── public/                  # static assets and images
+├── package.json             # project dependencies and scripts
+├── pnpm-lock.yaml           # lockfile
+├── next.config.js           # Next.js configuration
+├── tsconfig.json            # TypeScript config
+├── .gitignore               # repo ignore rules
+├── CHANGELOG.md             # project changelog
+└── README.md                # project documentation
+```
 
-### Getting Started
+## Features
 
-First, run the development server:
+- Hero section with clear product positioning
+- Capability cards for technical structure, macro dashboard, and research discipline
+- Workflow section outlining the research process
+- Principle-driven product messaging
+- CTA sections and footer branding
+- Sign-in and sign-up pages for a broader product experience
+
+## Getting started
+
+Use pnpm for the project workflow:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available scripts
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+pnpm dev     # start the local development server
+pnpm build   # create a production build
+pnpm start   # run the production build locally
+pnpm lint    # run Next.js lint checks
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Notes
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This repository is a front-end prototype and landing experience for Trung Invest. It is designed to communicate the product vision, research workflow, and positioning rather than provide a full end-to-end investment platform.
 
-### Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-### Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-### Support notes
-
-This template has been developed with the App Router (`app`) and React Server Components. If you’re unfamiliar with these beta features, you can find more information about them on the Next.js beta documentation page. So, please note that any request dealing with React (e.g. extra features, customisations, et cetera) is to be considered out of the support scope.
-
-For more information about what support covers, please see our (FAQs)[https://cruip.com/faq/].
-
-## Credits
-
-- [Nucleo](https://nucleoapp.com/)
-
-## Terms and License
-
-- Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
-- Copyright 2024 [Cruip](https://cruip.com/).
-- Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
-- Attribution is not required, although it is really appreciated.
-
-## About Us
-
-We're an Italian developer/designer duo creating high-quality design/code resources for developers, makers, and startups.
-
-## Stay in the loop
-
-If you would like to know when we release new resources, you can follow [@pacovitiello](https://x.com/pacovitiello) and [@DavidePacilio](https://x.com/DavidePacilio) on X, or you can subscribe to our [newsletter](https://cruip.com/newsletter/).
+This project is configured as a private application and is not provided with a public software license in the repository metadata.
 
